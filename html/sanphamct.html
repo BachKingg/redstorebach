@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Products - ShopBach</title>
+  <link rel="stylesheet" href="../view/assets/css/style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+        <img src="../view/assets/images/logo.png" alt="logo" width="125px">
+      </div>
+      <nav>
+        <ul id="MenuItems">
+          <li><a href="">Home</a></li>
+          <li><a href="">Products</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Account</a></li>
+        </ul>
+      </nav>
+      <img src="images/cart.png" alt="cart" width="25px" height="25px">
+      <img src="images/menu.png" alt="menu" class="menu-icon" onclick="menutoggle()">
+    </div>
+  </div>
+
+  <!-- Chi tiet san pham -->
+  <div class="small-container single-product">
+    <div class="row">
+      <div class="col-2">
+        <img src="../view/assets/images/user-2.png" width="100%">
+      </div>
+      <div class="col-2">
+        <p>Home / T-Shirt</p>
+        <h1>Red Printed T-Shirt by HRX</h1>
+        <h4>$50.00</h4>
+        <select name="" id="">
+          <option value="">Select Size</option>
+          <option value="">XXL</option>
+          <option value="">XL</option>
+          <option value="">Large</option>
+          <option value="">Medium</option>
+          <option value="">Small</option>
+        </select>
+        <input type="number" value="1">
+        <a href="" class="btn">Add To Cart</a>
+        <h3>Product Details <i class="fa fa-indent"></i></h3>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quae quos, nisi vitae neque deleniti dolore
+          modi dolor necessitatibus aperiam. </p>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- title -->
+  <div class="small-container">
+    <div class="row row-2">
+      <h3>Related Products</h3>
+      <p>View more</p>
+    </div>
+  </div>
+  <!-- products -->
+  <div class="small-container">
+    <div class="row">
+      <div class="col-4">
+        <img src="images/product-1.jpg" alt="">
+        <h4>Red Printed T-Shirt</h4>
+        <p>$50.00</p>
+      </div>
+      <div class="col-4">
+        <img src="images/product-2.jpg" alt="">
+        <h4>Red Printed T-Shirt</h4>
+        <p>$50.00</p>
+      </div>
+      <div class="col-4">
+        <img src="images/product-3.jpg" alt="">
+        <h4>Red Printed T-Shirt</h4>
+        <p>$50.00</p>
+      </div>
+      <div class="col-4">
+        <img src="images/product-4.jpg" alt="">
+        <h4>Red Printed T-Shirt</h4>
+        <p>$50.00</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col-1">
+          <h3>Download Our App</h3>
+          <p>Download App for Android and Ios mobile phone.</p>
+          <div class="app-logo">
+            <img src="images/play-store.png" alt="">
+            <img src="images/app-store.png" alt="">
+          </div>
+        </div>
+        <div class="footer-col-2">
+          <img src="images/logo-white.png" alt="">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing consectetur adipisicing consectetur adipisicingelit.
+          </p>
+        </div>
+        <div class="footer-col-3">
+          <h3>Useful Links</h3>
+          <ul>
+            <li>Coupons</li>
+            <li>Blogs Post</li>
+            <li>Return Policy</li>
+            <li>Join Affiliate</li>
+          </ul>
+        </div>
+        <div class="footer-col-4">
+          <h3>Follow Us</h3>
+          <ul>
+            <li>FaceBook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+            <li>Youtube</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <p class="copyright">Copyright 2021 - BachTheDev</p>
+    </div>
+  </div>
+
+</body>
+<script>
+  var MenuItems = document.getElementById("MenuItems");
+
+  MenuItems.style.maxHeight = "0px";
+
+  function menutoggle() {
+
+    if (MenuItems.style.maxHeight == "0px") {
+      MenuItems.style.maxHeight = "200px"
+    } else {
+      MenuItems.style.maxHeight = "0px"
+    }
+
+  }
+</script>
+
+</html>
